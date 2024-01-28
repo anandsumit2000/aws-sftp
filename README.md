@@ -13,3 +13,7 @@ Using the custom authentication mode gives you the flexibility to check other us
 -   Optional client source IP address checks for individual users
 -   Dynamic role allocation for access to Amazon S3
 -   [Logical directory](https://aws.amazon.com/about-aws/whats-new/2019/09/aws-transfer-for-sftp-now-supports-logical-directories-for-amazon-s3/)  mappings.
+
+##  Custom authentication identity providers
+
+By default, a new AWS Transfer Family endpoint uses the service managed, internal user directory for SSH key-based authentication, but you can instead use an IdP of your choice. To do this, specify `--identity-provider-type API_GATEWAY` with an API Gateway endpoint to provide integration to the custom authentication provider.
